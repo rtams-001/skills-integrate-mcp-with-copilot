@@ -30,15 +30,15 @@ header h1 {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
   justify-content: center;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
+.activity-note {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.5;
 }
 
 section {
@@ -47,7 +47,6 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
 }
 
 section h3 {
@@ -72,6 +71,26 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.card-actions {
+  margin-top: 15px;
+}
+
+.register-btn {
+  display: inline-block;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #1565c0;
 }
 
 /* New styles for participants section */
